@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { Container, Typography } from '@mui/material';
+import Order from './components/Order/index.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="md">
+      <Typography
+      // margen inferior
+      gutterBottom
+      variant="h2"
+      align="center">
+        Bon appétit Restaurant
+      </Typography>
+      < Order />
+
+    </Container>
   );
 }
 
