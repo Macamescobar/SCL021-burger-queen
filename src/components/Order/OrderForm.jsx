@@ -1,10 +1,10 @@
 import React from 'react'
+import { Form } from '../../layout/Form'
 
 export default function OrderForm() {
   return (
-    <form noValidate autoComplete="off">
-        <input />
-        <select />
-    </form>
+    <Form>
+      <input/>
+    </Form>
   )
 }

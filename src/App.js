@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Container, Typography } from '@mui/material';
 import Order from './components/Order/index.jsx';
@@ -14,7 +14,6 @@ function App() {
         Bon appétit Restaurant
       </Typography>
       < Order />
-
     </Container>
   );
 }
