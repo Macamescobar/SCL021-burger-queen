@@ -1,5 +1,4 @@
 
-import './App.css';
 import { Container, Typography } from '@mui/material';
 import Order from './components/Order/index.jsx';
 
