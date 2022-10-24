@@ -6,7 +6,7 @@ export default function CategorySection() {
   return (
     <Item
       sx={{
-        width: "5vw",
+        width: "10vw",
         bgcolor: "#261D56",
         boxShadow: "1px 3px 1px #9E9E9E",
         borderRadius: 5,

@@ -10,6 +10,21 @@ code {
     monospace;
 }
 
+.categories-food {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  cursor: pointer;
+  
+}
 
+.categories-food:hover {
+  background-color: #E6E8FA;
+ 
+}
 
-
+.categories-food li {
+  font-size: 48px;
+  
+}

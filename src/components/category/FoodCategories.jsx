@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import "../../index.css";
 
 const FoodCategories = (props) => {
     return (
-        <Fragment className= 'categories-food'>
-            <h1>{props.burger}</h1>
-            <h1>{props.accompaniment}</h1>
-            <h1>{props.coffee}</h1>
-            <h1>{props.drinks}</h1>
-        </Fragment>
+        <ul className= 'categories-food'>
+            <li>{props.burger}</li>
+            <li>{props.accompaniment}</li>
+            <li>{props.coffee}</li>
+            <li>{props.drinks}</li>
+        </ul>
     );
 }
  

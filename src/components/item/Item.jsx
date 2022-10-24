@@ -7,7 +7,7 @@ export default function Item(props) {
   return (
     <Box
       sx={{
-        padding: 2,
+        padding: 0,
         margin: 0,
         //bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : 'grey.100'),
         //color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800'),

@@ -8,8 +8,6 @@ export default function OrderSection() {
         bgcolor: "#FFFFFF",
         boxShadow: "1px 3px 1px #9E9E9E",
       }}
-    >
-      Item 3
-    </Item>
+    > Item 3 </Item>
   );
 }
