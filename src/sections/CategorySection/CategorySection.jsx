@@ -1,4 +1,6 @@
 import Item from "../../components/item/Item";
+import FoodCategories from "../../components/category/FoodCategories"
+import "../../index.css";
 
 export default function CategorySection() {
   return (
@@ -9,8 +11,12 @@ export default function CategorySection() {
         boxShadow: "1px 3px 1px #9E9E9E",
         borderRadius: 5,
       }}
-    >
-      Item 1
+    > 
+    <FoodCategories burger= "🍔"></FoodCategories>
+    <FoodCategories accompaniment= "🍟"></FoodCategories>
+    <FoodCategories coffee= "☕"></FoodCategories>
+    <FoodCategories drinks= "🍹"></FoodCategories>
     </Item>
+    
   );
 }

@@ -8,8 +8,6 @@ export default function FoodSection() {
         bgcolor: "#DEE8FF",
         boxShadow: "1px 3px 1px #9E9E9E",
       }}
-    >
-      Item 2
-    </Item>
+    > Item 2</Item>
   );
 }
