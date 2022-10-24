@@ -1,4 +1,4 @@
-import Item from "../../components/Item/Item";
+import Item from "../../components/item/Item";
 
 export default function CategorySection() {
   return (
