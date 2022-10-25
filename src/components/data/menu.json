@@ -1,0 +1,48 @@
+
+{
+    "Burgers":  
+    [{
+        "name": "Simple Burger",
+        "price": 10,
+        "description": "Beef, cheddar cheese, onion, lettuce, tomato, home-made mayonnaise, pickles",
+        "img": "../../img/simple-burger.png"
+    },
+    {
+        "name": "Double Burger",
+        "price": 15,
+        "description": "Chicken, cheddar cheese, onion, lettuce, pepper, home-made mayonnaise, pickles",
+        "img": "../../img/double-burger.png"
+    },
+    {
+        "name": "Vegan Burger",
+        "price": 15,
+        "description": "Lentils, vegan cheese, fries onion rings, lettuce, vegan mayonnaise, pickles",
+        "img": "../../img/vegan-burger.png"
+    },
+    {
+        "name": "American Burger",
+        "price": 18,
+        "description": "Beef, cheddar cheese, caramelized onion, bacon, home-made mayonnaise",
+        "img": "../../img/vegan-burger.png"
+    }],
+    "accompaniment": 
+    [{
+        "name": "French Fries",
+         "price": 7,
+        "description": "Include mayonnaise and ketchup free",
+        "img": "../../img/vegan-burger.png"
+    },
+    {
+        "name": "Onion Rings",
+        "price": 5,
+        "description": "5 rings onion fries",
+        "img": "../../img/vegan-burger.png"
+    },
+    {
+        "name": "Rustic Potatoes",
+        "price": 9,
+        "description": "Include mayonnaise, ketchup and mustard free",
+        "img": "../../img/vegan-burger.png"
+    }]
+    
+}

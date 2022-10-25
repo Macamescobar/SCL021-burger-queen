@@ -1,13 +1,13 @@
 import React from 'react';
 import "../../index.css";
 
-const FoodCategories = (props) => {
+const FoodCategories = ({burger, accompaniment, coffee, drinks}) => {
     return (
         <ul className= 'categories-food'>
-            <li>{props.burger}</li>
-            <li>{props.accompaniment}</li>
-            <li>{props.coffee}</li>
-            <li>{props.drinks}</li>
+            <li>{burger}</li>
+            <li>{accompaniment}</li>
+            <li>{coffee}</li>
+            <li>{drinks}</li>
         </ul>
     );
 }
