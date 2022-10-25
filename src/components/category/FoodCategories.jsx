@@ -13,3 +13,4 @@ const FoodCategories = ({burger, accompaniment, coffee, drinks}) => {
 }
  
 export default FoodCategories;
+

@@ -9,5 +9,6 @@ export default function FoodSection() {
         boxShadow: "1px 3px 1px #9E9E9E",
       }}
     > Item 2</Item>
-  );
+  )
 }
+

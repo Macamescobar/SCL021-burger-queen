@@ -4,6 +4,7 @@ import FoodSection from "../FoodSection/FoodSection";
 import OrderSection from "../OrderSection/OrderSection";
 
 export default function HomePage() {
+
   return (
     <div
       style={{
