@@ -1,13 +1,10 @@
 import React from 'react';
 import "../../index.css";
 
-const FoodCategories = ({burger, accompaniment, coffee, drinks}) => {
+const FoodCategories = ( {setSelected, category}) => {
     return (
         <ul className= 'categories-food'>
-            <li>{burger}</li>
-            <li>{accompaniment}</li>
-            <li>{coffee}</li>
-            <li>{drinks}</li>
+            <li onClick={()=> {setSelected(category.category_name)}}>{category.icon}</li>
         </ul>
     );
 }
