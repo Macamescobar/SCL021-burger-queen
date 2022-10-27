@@ -1,27 +1,72 @@
 body {
   margin: 0;
-  font-family:"Amaranth";
-  background-color: #E6E8FA;
+  background-color: #e6e8fa;
 }
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 
 .categories-food {
   list-style: none;
   cursor: pointer;
   font-size: 40px;
-
 }
 
 .categories-food:hover {
-  background-color:#E6E8FA;
+  background-color: #e6e8fa;
+  
 }
 
+.css-185oczk-MuiContainer-root {
+  padding: 0 !important;
+}
 
+.cards-menu {
+  width: 18vw;
+  height: 25vh;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  margin: 20px;
+  padding:15px;
+}
 
+.item-title {
+  font-family: "Amaranth";
+  color: #261D56;
+  font-weight: bolder;
+  font-size: 18px;
+  
+}
 
+.description-item {
+ font-family: "ABeeZee";
+ font-size:15px;
+ text-align: center;
+ margin-top: -20px;
+}
+
+.price-item{
+  font-family:"ABeeZee";
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+
+}
+
+.btn-add {
+  width: 70px;
+  height: 30px;
+  background-color: #261D56;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family:'ABeeZee';
+  font-size: 12px;
+  font-weight: 400;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: -15px;
+}
