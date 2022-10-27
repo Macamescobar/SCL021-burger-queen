@@ -7,11 +7,18 @@ body {
   list-style: none;
   cursor: pointer;
   font-size: 40px;
+  margin-top: 50px;
 }
 
 .categories-food:hover {
-  background-color: #e6e8fa;
-  
+  /* transform: scale(1.5); */
+  background-color:  #e6e8fa;
+}
+
+.styles-ul {
+ padding: 0;
+ margin-top: -50px;
+ 
 }
 
 .css-185oczk-MuiContainer-root {
@@ -31,6 +38,10 @@ body {
   line-height: 1;
   margin: 20px;
   padding:15px;
+}
+
+.cards-menu:hover {
+  transform: scale(1.1);
 }
 
 .item-title {

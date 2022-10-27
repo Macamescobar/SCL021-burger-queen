@@ -4,7 +4,6 @@ import menu from "../../data/menu.json"
 import { Container} from "@mui/material";
 import { useState } from "react";
 import FoodSection from "../FoodSection/FoodSection"
-import { Rowing } from "@mui/icons-material";
 
 export default function CategorySection() {
   
@@ -20,10 +19,11 @@ export default function CategorySection() {
         boxShadow: "1px 3px 1px #9E9E9E",
         borderRadius: 5,
         display:"flex",
+        justifyContent: "center",
         alignItems: "center",
       }}
     > 
-    <ul>
+    <ul className="styles-ul">
     {
       menu.map((category,index) => 
       <FoodCategories key={index} category={category} setSelected={setSelected}/>)
