@@ -6,7 +6,7 @@ export default function OrderSection() {
   return (
     <Container
       sx={{
-        width: "30vw",
+        width: "40vw",
         bgcolor: "#FFFFFF",
         boxShadow: "1px 3px 1px #9E9E9E",
         borderRadius: 10,

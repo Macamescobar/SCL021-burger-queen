@@ -26,11 +26,12 @@ export default function FoodSection({selected}) {
         boxShadow: "1px 3px 1px #9E9E9E",
         borderRadius: 10,
         height: "85vh",
+        
       }}
     > 
     {menuItems.map(({item, price, description, picture},index)=> (
       <div className="cards-menu" key={index}>
-        <img alt="menu" src={picture}/>
+        <img className="food-picture" alt="menu" src={picture}/>
         <div className="item-title"><p key={index}>{item}</p></div>
         <div className="description-item"><p>{description}</p></div>
         <div className="price-item"><p>${price}</p></div>
