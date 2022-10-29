@@ -91,25 +91,25 @@
                 "item": "Water",
                 "price": 5,
                 "description": " 500 ml",
-                "picture": "./src/assets/menuPics/muffin.jpg"
+                "picture": "../../img/water-bottles.png"
             },
             {
                 "item": "Mineral Water",
                 "price": 7,
                 "description": "750 ml",
-                "picture": "./src/assets/menuPics/croissant.jpg"
+                "picture": "../../img/water-bottles.png"
             },
             {
                 "item": "Soda",
                 "price": 7,
                 "description": "500 ml",
-                "picture": "./src/assets/menuPics/croissant.jpg"
+                "picture": "../../img/soda.png"
             },
             {
                 "item": "Iced Tea",
                 "price": 5,
-                "description": "Mango black Tea, 200 ml.",
-                "picture": "./src/assets/menuPics/croissant.jpg"
+                "description": "Lemon black Tea, 200 ml.",
+                "picture": "../../img/iced-tea.png"
             }
 
         ]
