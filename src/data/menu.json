@@ -1,0 +1,119 @@
+[ 
+    {
+        "category_name": "burgers",
+        "icon": "🍔",
+        "items": [
+            {
+                "item": "Simple Burger",
+                "price": 10,
+                "description": "Beef, cheddar cheese, onion, lettuce, tomato, home-made mayonnaise, pickles.",
+                "picture": "../../img/simple-burger.png"
+            },
+            {
+                "item": "Double Burger",
+                "price": 15,
+                "description": "Chicken, cheddar cheese, onion, lettuce, pepper, home-made mayonnaise, pickles.",
+                "picture": "../../img/double-burger.png"
+            },
+            {
+                "item": "Vegan Burger",
+                "price": 15,
+                "description": "Lentils, vegan cheese, fries onion rings, lettuce, vegan mayonnaise, pickles.",
+                "picture": "../../img/vegan-burger.png"
+            },
+            {
+                "item": "American Burger",
+                "price": 18,
+                "description": "Beef, cheddar cheese, caramelized onion, bacon, home-made mayonnaise.",
+                "picture": "../../img/american-burger.png"
+            }
+        ]
+    },
+    {
+        "category_name": "accompaniment",
+        "icon": "🍟",
+        "items": [
+            {
+                "item": "French Fries",
+                "price": 7,
+                "description": "Include mayonnaise and ketchup free.",
+                "picture": "../../img/french-fries.png"
+            },
+            {
+                "item": "Onion Rings",
+                "price": 5,
+                "description":"5 rings onion fries.",
+                "picture": "../../img/onion-rings.png"
+            },
+            {
+                "item":"Rustic Potatoes",
+                "price": 9,
+                "description":"Include mayonnaise, ketchup and mustard free.",
+                "picture":"../../img/rustic-potatoes.png"
+            }
+        ]
+    },
+    {
+        "category_name": "coffee",
+        "icon": "☕",
+        "items": [
+            {
+                "item": "Espresso Dark Roast",
+                "price": 8,
+                "description": "Intense and sweet coffe,100 ml.",
+                "picture": "../../img/coffee.png"
+            },
+            {
+                "item": "Espresso Blonde Roast",
+                "price": 8,
+                "description": "Soft and sweet coffee, 100 ml.",
+                "picture": "../../img/espresso-coffee.png"
+            },
+            {
+                "item": "American Coffee",
+                "price": 6,
+                "description": " 100% pure coffee, 200 ml.",
+                "picture": "../../img/american-coffee.png"
+            },
+            {
+                "item": "Café au lait",
+                "price": 6,
+                "description": " A balanced combination of rich and aromatic coffee and smooth milk.",
+                "picture": "../../img/cafe-au-laite.png"
+            }
+        ]
+    },
+    {
+        "category_name": "drinks",
+        "icon": "🍹",
+        "items": [
+            {
+                "item": "Water",
+                "price": 5,
+                "description": " 500 ml",
+                "picture": "../../img/water-bottles.png"
+            },
+            {
+                "item": "Mineral Water",
+                "price": 7,
+                "description": "750 ml",
+                "picture": "../../img/water-bottles.png"
+            },
+            {
+                "item": "Soda",
+                "price": 7,
+                "description": "500 ml",
+                "picture": "../../img/soda.png"
+            },
+            {
+                "item": "Iced Tea",
+                "price": 5,
+                "description": "Lemon black Tea, 200 ml.",
+                "picture": "../../img/iced-tea.png"
+            }
+
+        ]
+    }
+]
+    
+
