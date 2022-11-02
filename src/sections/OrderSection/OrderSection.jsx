@@ -1,8 +1,7 @@
 import { Container } from "@mui/material";
 
-
-
 export default function OrderSection() {
+ 
   return (
     <Container
       sx={{
@@ -14,6 +13,12 @@ export default function OrderSection() {
         fontWeight: "700",
         height: "85vh",
       }}
-    > Item 3 </Container>
+    >
+      {
+        <div className="title-order">
+          <h3>Your order summary</h3>
+        </div>
+      }
+    </Container>
   );
 }

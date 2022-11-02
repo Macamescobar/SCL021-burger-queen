@@ -87,3 +87,14 @@ body {
   height: 80px;
   margin-top: -60px;
 }
+
+
+.title-order {
+  font-family: "Amaranth";
+  color: #261D56;
+  font-weight: bolder;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
