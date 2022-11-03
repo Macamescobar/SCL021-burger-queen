@@ -141,6 +141,30 @@ body {
 
 .icon-trash{
   color: #261D56;
+  cursor: pointer;
+}
+
+.total-price {
+  font-family: "Amaranth";
+  font-size: 18px;
+  color: #261D56;
+  font-weight: bold;
+}
+.container-form-customer {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-order-customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 2rem;
+}
+
+.btn-submit, .btn-order {
+  cursor: pointer;
 }
 
 

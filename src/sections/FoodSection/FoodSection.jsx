@@ -2,7 +2,6 @@ import { Container } from "@mui/material";
 import { useState } from "react";
 import menu from "../../data/menu.json";
 import OrderSection from "../OrderSection/OrderSection";
-import handleAddProduct from "../OrderSection/OrderSection"
 
 
 export default function FoodSection({ selected}) {
@@ -66,7 +65,7 @@ export default function FoodSection({ selected}) {
           </div>
         ))}
       </Container>
-      <OrderSection selected={selected} cartItems={cartItems}></OrderSection>
+      <OrderSection selected={selected} cartItems={cartItems} setCartItems={setCartItems}></OrderSection>
     </>
   );
 }
