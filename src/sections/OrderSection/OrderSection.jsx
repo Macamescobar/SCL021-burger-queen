@@ -1,11 +1,22 @@
 import { Container } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+
 
 export default function OrderSection({ cartItems, setCartItems }) {
-  console.log(cartItems);
+  //console.log(cartItems);
 
+  // Borrar productos del carrito
+  const deleteCartItem = (item) => {
+    //console.log(item);
+    setCartItems(cartItems.filter(productItem => productItem.item !== item))
+    //console.log(cartItems.filter(productItem => productItem.item !== item))
+  }
+
+  //Calular el total del carrito
+  const totalPrice = cartItems.reduce((price, item) => price + item.quantity * item.price, 0)
+
+  // Función para agregar más productos desde la orden
   const handleAdd = (itemName) => {
     setCartItems(
       cartItems.map((dish) =>
@@ -16,6 +27,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
     );
   };
 
+  // Función para remover productos desde la orden
   const handleLess = (itemName) => {
     setCartItems(
       cartItems.map((dish) =>
@@ -39,6 +51,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
       }}
     >
       {<p className="title-order">Your order summary</p>}
+      {/* Mapear cada elemeno dentro del menu */}
       {cartItems.map(({ item, price, quantity }, index) => (
         <div className="container-order" key={index}>
           <div className="item-order-left">
@@ -48,30 +61,27 @@ export default function OrderSection({ cartItems, setCartItems }) {
             <button
               className="btn-remove-food"
               onClick={() => handleLess(item)}
-            >
-              -
-            </button>
+            > - </button>
             <input
               type="number"
               className="input-number"
-              min="1"
               value={quantity}
             ></input>
             <button
               className="btn-add-food"
               onClick={() => handleAdd(item)}
-            >
-              {" "}
-              +{" "}
-            </button>
+            > + </button>
           </div>
           <div className="price-order">${price * quantity}</div>
           <div className="icon-trash">
-            <FontAwesomeIcon icon={faTrash} />
+            <FontAwesomeIcon icon={faTrash} onClick={() => deleteCartItem(item)}/>
           </div>
         </div>
       ))}
-      {<p className="total-price">Total:</p>}
+      {<div className="total-price">
+        <p>Total:</p>
+        <div><p>${totalPrice}</p></div>
+      </div>}
       {
         <div className="container-form-customer">
           <p className="customer-order"> Customer </p>

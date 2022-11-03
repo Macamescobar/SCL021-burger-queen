@@ -149,6 +149,10 @@ body {
   font-size: 18px;
   color: #261D56;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .container-form-customer {
   display: flex;
