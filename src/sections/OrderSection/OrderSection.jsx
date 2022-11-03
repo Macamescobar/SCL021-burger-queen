@@ -1,6 +1,6 @@
 import { Container } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function OrderSection({ cartItems, setCartItems }) {
@@ -84,16 +84,20 @@ export default function OrderSection({ cartItems, setCartItems }) {
       </div>}
       {
         <div className="container-form-customer">
-          <p className="customer-order"> Customer </p>
+          <p> Customer </p>
           <input type="text"></input>
-          <p> Table Number </p>
+          <p> Table number </p>
           <input type="text"></input>
         </div>
       }
       {
         <div className="btn-order-customer">
           <button className="btn-submit">Submit</button>
-          <button className="btn-order">Orders</button>
+          <div>
+          <button className="btn-order" >Orders</button>
+          <div className="icon-arrow"><FontAwesomeIcon icon={faArrowRight} /></div>
+          </div>
+          
         </div>
       }
     </Container>
