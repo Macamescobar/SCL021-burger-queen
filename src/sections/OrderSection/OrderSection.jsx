@@ -1,11 +1,14 @@
 import { Container } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { createOrder } from "../../firebase/firestore";
+
 
 
 export default function OrderSection({ cartItems, setCartItems }) {
   //console.log(cartItems);
 
+  
   // Borrar productos del carrito
   const deleteCartItem = (item) => {
     //console.log(item);
@@ -92,7 +95,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
       }
       {
         <div className="btn-order-customer">
-          <button className="btn-submit">Submit</button>
+          <button className="btn-submit" onClick={() => createOrder()}>Submit</button>
           <div>
           <button className="btn-order" >Orders</button>
           <div className="icon-arrow"><FontAwesomeIcon icon={faArrowRight} /></div>
