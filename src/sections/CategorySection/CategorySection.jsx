@@ -10,18 +10,8 @@ export default function CategorySection() {
 
   return (
     <>
-      <Container
-        sx={{
-          width: "10vw",
-          bgcolor: "#261D56",
-          boxShadow: "1px 3px 1px #9E9E9E",
-          borderRadius: 5,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <ul className="styles-ul">
+      <div className="category-section-container">
+      <ul className="styles-ul">
           {menu.map((category, index) => (
             <FoodCategories
               key={index}
@@ -30,7 +20,7 @@ export default function CategorySection() {
             />
           ))}
         </ul>
-      </Container>
+      </div>
       <FoodSection selected={selected}></FoodSection>
     </>
   );
