@@ -22,13 +22,10 @@ export const createOrder = async (
   }
 };
 
-// Función para obtener toda la colacción desde firestore
+// Función para obtener toda la colección desde firestore
 export const getDataFromFirestore = async () => {
+  
   const querySnapshot = await getDocs(collection(db, "order"));
-  querySnapshot.forEach((doc) => {
-    // doc.data() is never undefined for query doc snapshots
-    console.log(doc.id, " => ", doc.data())
-  })
+  return querySnapshot;
 };
 
-getDataFromFirestore()

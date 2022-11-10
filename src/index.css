@@ -296,12 +296,12 @@ body {
   width: 50vw;
   height: 30vh;
   border-radius: 40px;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
-  grid-template-columns: 8vw 8vw 8vw 8vw 8vw;
+  margin-left: -5px;
+  /* grid-template-columns: 8vw 8vw 8vw 8vw 8vw; */
   /* grid-template-rows: 200px 75px; */
-  column-gap: 0.1rem;
   font-family: "Amaranth";
   font-size: 18px;
   color: #261d56;
@@ -319,3 +319,25 @@ body {
   cursor: pointer;
   text-align: center;
 }
+
+.items-order-kitchen {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: 8vw 8vw 8vw 8vw 8vw;
+  column-gap: 1.2rem;
+  position: relative;
+  bottom: 11rem;
+  margin-left: 5rem;
+  font-family: "ABeeZee";
+  font-size: 15px;
+  color: #261D56;
+}
+
+.items-order-kitchen:hover {
+  background-color: #DEE8FF;
+}
+
+.btn-delete-order {
+  cursor: pointer;
+}
+
