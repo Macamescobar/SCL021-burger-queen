@@ -6,7 +6,7 @@ export const createOrder = async (
   customerName,
   totalPrice,
   tableNumber,
-  cartItems
+  cartItems,
 ) => {
   try {
     const docRef = await addDoc(collection(db, "order"), {
@@ -14,6 +14,7 @@ export const createOrder = async (
       totalPrice: totalPrice,
       customer: customerName,
       tableNumber: tableNumber,
+      status: "New...",
     });
     return docRef;
     // console.log("Document written with ID: ", docRef.id);

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import menu from "../../data/menu.json";
 import OrderSection from "../OrderSection/OrderSection";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function FoodSection({ selected }) {
   //Encontrar según categoría seleccionada
@@ -48,7 +50,7 @@ export default function FoodSection({ selected }) {
               className="btn-add"
               onClick={() => handleAddProduct({ item, price })}
             >
-              Add
+              <FontAwesomeIcon icon={faPlus}/>
             </button>
           </div>
         ))}

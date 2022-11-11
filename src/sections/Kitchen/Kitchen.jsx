@@ -8,7 +8,6 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 export const KitchenOrder = () => {
   const [orders, setOrders] = useState([]);
 
-  //const [IsGetOrderAvailable, setIsGetOrderAvailable] = useState(false)
 
   useEffect(() => {
     const getOrders = async () => {
@@ -25,6 +24,11 @@ export const KitchenOrder = () => {
     getOrders();
   }, []);
 
+  // const changeOrderStatusInKitchen = (e) => {
+    
+  // }
+ 
+
   return (
     <>
       <div className="container-home-page">
@@ -33,19 +37,27 @@ export const KitchenOrder = () => {
             <div className="title-kitchen">
               <p> List of orders </p>
             </div>
-            <div className="table-orders">
+            <div>
+              <div className="table-orders">
               <p> Table n°</p>
               <p> Customer </p>
               <p> Grand total </p>
               <p> Status </p>
+              <p> Change status </p>
               <p> Delete </p>
+              </div>
             </div>
-            {orders.map(({ customer, totalPrice, tableNumber }, index) => (
+            {orders.map(({ customer, totalPrice, tableNumber, status}, index) => (
               <div className="items-order-kitchen" key={index}>
                 <p> #{tableNumber} </p>
-                <p>{customer}</p>
-                <p>{totalPrice}</p>
-                <p>Satus</p>
+                <p className="customer-order">{customer}</p>
+                <p> ${totalPrice}</p>
+                <p>{status}</p>
+                <select className="select-status">
+                  <option value="Default"> </option>
+                  <option value="In process"> In process⏳</option>
+                  <option value="Ready"> Ready✅ </option>
+                </select>
                 <div className="btn-delete-order"> <FontAwesomeIcon icon={faTrash}/></div>
               </div>
             ))}

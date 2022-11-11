@@ -189,6 +189,9 @@ body {
   color: #261d56;
   cursor: pointer;
 }
+.icon-trash:hover {
+  color:red;
+}
 
 .total-price {
   font-family: "Amaranth";
@@ -291,20 +294,21 @@ body {
   font-size: 20px;
 }
 
+/* Estilos del container de órdenes */
+
 .table-orders {
-  background-color: white;
-  width: 50vw;
+ background-color: #261D56;
+  width: 60vw;
   height: 30vh;
   border-radius: 40px;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   margin-left: -5px;
-  /* grid-template-columns: 8vw 8vw 8vw 8vw 8vw; */
-  /* grid-template-rows: 200px 75px; */
+  gap: 1rem;
   font-family: "Amaranth";
   font-size: 18px;
-  color: #261d56;
+  color: white;
 }
 
 .btn-back {
@@ -321,23 +325,42 @@ body {
 }
 
 .items-order-kitchen {
+  background-color: white;
+  width: 60vw;
   display: grid;
   align-items: baseline;
-  grid-template-columns: 8vw 8vw 8vw 8vw 8vw;
-  column-gap: 1.2rem;
+  grid-template-columns: 8vw 6vw 6vw 6vw 6vw 6vw;
+  gap: 3.3rem;
   position: relative;
   bottom: 11rem;
-  margin-left: 5rem;
+  margin-left: -0.3rem;
   font-family: "ABeeZee";
   font-size: 15px;
   color: #261D56;
-}
-
-.items-order-kitchen:hover {
-  background-color: #DEE8FF;
+  text-align: center;
 }
 
 .btn-delete-order {
   cursor: pointer;
+  margin-left: 40px;
+}
+.btn-delete-order:hover {
+  color: red;
 }
 
+
+.select-status {
+  width: 8vw;
+  height: 4vh;
+  font-family: "ABeeZee";
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color:#dee8ff;
+  color:#261D56;
+  border-radius: 50px;
+}
+
+.customer-order {
+  cursor: pointer;
+}
