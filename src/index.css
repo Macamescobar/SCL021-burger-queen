@@ -299,7 +299,7 @@ body {
 .table-orders {
  background-color: #261D56;
   width: 60vw;
-  height: 30vh;
+  height: 70vh;
   border-radius: 40px;
   display: flex;
   justify-content: space-evenly;
@@ -332,7 +332,7 @@ body {
   grid-template-columns: 8vw 6vw 6vw 6vw 6vw 6vw;
   gap: 3.3rem;
   position: relative;
-  bottom: 11rem;
+  bottom: 30rem;
   margin-left: -0.3rem;
   font-family: "ABeeZee";
   font-size: 15px;
