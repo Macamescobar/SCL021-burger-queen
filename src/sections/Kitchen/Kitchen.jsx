@@ -62,6 +62,7 @@ export const KitchenOrder = () => {
   const getIdInOrderKitchen = (e, id) => {
     const foundId = orders.find(order => order.id === id);
     console.log(foundId);
+    setselectedId(foundId)
   }
   
   return (
@@ -108,7 +109,7 @@ export const KitchenOrder = () => {
               )
             )}
           </div>
-          <OrderDetails orders={orders}></OrderDetails>
+          <OrderDetails order={selectedId}></OrderDetails>
         </Box>
       </div>
     </>
