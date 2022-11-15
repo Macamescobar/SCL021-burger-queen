@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 export default function OrderSection({ cartItems, setCartItems }) {
 
-  const [customerName, setCustomer] = useState();
-  const [tableNumberVal, setTableNumberVal] = useState();
+  const [customerName, setCustomer] = useState('');
+  const [tableNumberVal, setTableNumberVal] = useState(1);
   const [showAlert, setShowAlert] = useState(false);
   
 
@@ -53,7 +53,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
       )
     );
   };
-  // Alerta de orden exitoa
+  // Alerta de orden exitosa
   const generateAndCreateOrder = async() => {
    const saveOrder = await createOrder(customerName, totalPrice, tableNumberVal, cartItems);
    if (saveOrder) {

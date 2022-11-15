@@ -361,6 +361,12 @@ body {
   border-radius: 50px;
 }
 
-.customer-order {
+.btn-eye {
+  border:none;
+  background-color: white;
+  font-size: 1.2rem;
   cursor: pointer;
+}
+.btn-eye:hover {
+  color: #bcff7c;
 }

@@ -4,9 +4,7 @@ import {
   getDocs,
   doc,
   deleteDoc,
-  serverTimestamp,
-  query,
-  orderBy,
+  serverTimestamp, updateDoc
 } from "firebase/firestore";
 import { db } from "./firebase-config";
 
@@ -43,4 +41,17 @@ export const getDataFromFirestore = async () => {
 export const deleteOrderInKitchen = async (id) => {
   await deleteDoc(doc(db, "order", id));
 };
+
+// Función para cambiar el status de orden
+
+export const changeStatusInKitchenToFirestore = async (id,statusValue) => {
+  const docRef = doc(db, "order", id);
+  updateDoc(docRef, {status: statusValue})
+  .then(docRef => {
+    console.log("Document Field has been updated successfully")
+  })
+  .catch(error => {
+    console.log(error);
+  })
+}
 

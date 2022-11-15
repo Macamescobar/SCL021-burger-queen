@@ -1,15 +1,19 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
+export const OrderDetails = ({orders}) => {
 
-
-export const OrderDetails = () => {
+  
   return (
     <>
-     <div className="order-section-container">
+      <div className="order-section-container">
         <p className="title-order"> Order Details </p>
-        <Link to="/"><button className="btn-back"> Back </button></Link>
-     </div>
+        {orders.map(({items}, index) => (
+            <p key={index}> {items}</p>
+        ))}
+        <Link to="/">
+          <button className="btn-back"> Back </button>
+        </Link>
+      </div>
     </>
-    
-  )
-}
+  );
+};
