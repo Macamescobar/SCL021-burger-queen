@@ -25,7 +25,7 @@ export const KitchenOrder = () => {
         ordersKitchen.push(order);
       });
       setOrders(ordersKitchen);
-      console.log(ordersKitchen);
+      //console.log(ordersKitchen);
     };
     getOrders();
   }, []);
@@ -38,7 +38,6 @@ export const KitchenOrder = () => {
     const unsub = onSnapshot(q, (snapshot) =>
       setOrders(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
     );
-
     return unsub;
   }, []);
 
@@ -61,7 +60,7 @@ export const KitchenOrder = () => {
 
   const getIdInOrderKitchen = (e, id) => {
     const foundId = orders.find(order => order.id === id);
-    console.log(foundId);
+    //console.log(foundId);
     setselectedId(foundId)
   }
   

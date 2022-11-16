@@ -113,6 +113,25 @@
             }
 
         ]
+    },
+    {
+        "category_name": "extra",
+        "icon": "➕",
+        "items": [
+            {
+                "item": "Cheddar Cheese",
+                "price": 1,
+                "description": " One slice of cheese",
+                "picture": "../../img/cheedar-cheese.png"
+            },
+            {
+                "item": "Egg",
+                "price": 1,
+                "description": "One egg",
+                "picture": "../../img/egg.png"
+            }
+
+        ]
     }
 ]
     

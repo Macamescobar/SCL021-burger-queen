@@ -18,11 +18,19 @@ export const OrderDetails = ({ order }) => {
             {order.items.map((item, index) => (
               <div className="order-details">
                 <div key={index}> {item.item} </div>
-                <div> {item.quantity} </div>
-                <div className="price-order-details"> ${item.price} </div>
+                <div key={index}> {item.quantity} </div>
+                <div className="price-order-details"> ${item.price * item.quantity} </div>
               </div>
             ))}
-            <div className="customer-order-details"> Customer: {order.customer} </div>
+            <div className="customer-order-details">
+              <p> Customer: </p>
+            <div className="order-customer"> {order.customer} </div>
+            </div>
+            <div className="order-details-notes">
+              <p> Notes: </p>
+            <p className="order-notes"> {order.notes}</p>
+            </div>
+            
           </>
           
         )}
