@@ -4,13 +4,11 @@ import { createOrder } from "../../firebase/firestore";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-
-
 export default function OrderSection({ cartItems, setCartItems }) {
-  const [customerName, setCustomer] = useState();
-  const [tableNumberVal, setTableNumberVal] = useState();
+  const [customerName, setCustomer] = useState("");
+  const [tableNumberVal, setTableNumberVal] = useState(1);
   const [showAlert, setShowAlert] = useState(false);
-  
+  const [waitressNotes, setwaitressNotes] = useState("");
 
   // Función que guarda el nombre del cliente
   function handleChange(e) {
@@ -21,6 +19,13 @@ export default function OrderSection({ cartItems, setCartItems }) {
   const tableNumber = (e) => {
     setTableNumberVal(e.target.value);
   };
+
+  // Función que guarda notas del pedido
+  const notes = (e) => {
+    setwaitressNotes(e.target.value);
+    console.log(e.target.value);
+  };
+
   // Borrar productos del carrito
   const deleteCartItem = (item) => {
     //console.log(item);
@@ -52,13 +57,19 @@ export default function OrderSection({ cartItems, setCartItems }) {
       )
     );
   };
-
-  const generateAndCreateOrder = async() => {
-   const saveOrder = await createOrder(customerName, totalPrice, tableNumberVal, cartItems);
-   if (saveOrder) {
-      setShowAlert(true)
-      setTimeout(() => setShowAlert(false), 3000)
-   }
+  // Alerta de orden exitosa
+  const generateAndCreateOrder = async () => {
+    const saveOrder = await createOrder(
+      customerName,
+      totalPrice,
+      tableNumberVal,
+      cartItems,
+      waitressNotes
+    );
+    if (saveOrder) {
+      setShowAlert(true);
+      setTimeout(() => setShowAlert(false), 3000);
+    }
   };
 
   return (
@@ -107,10 +118,21 @@ export default function OrderSection({ cartItems, setCartItems }) {
       }
       {
         <div className="container-form-customer">
-          <p> Customer </p>
-          <input type="text"  onChange={handleChange}></input>
-          <p> Table number </p>
-          <input type="text" onChange={tableNumber}></input>
+          <div>
+            <p> Customer </p>
+            <input type="text" onChange={handleChange}></input>
+          </div>
+          <div>
+            {" "}
+            <p> Table number </p>
+            <input type="text" onChange={tableNumber}></input>
+          </div>
+        </div>
+      }
+      {
+        <div className="notes">
+          <p> Notes </p>
+          <textarea type="text" onChange={notes}></textarea>
         </div>
       }
       {
@@ -118,12 +140,14 @@ export default function OrderSection({ cartItems, setCartItems }) {
           <button
             className="btn-submit"
             onClick={() => generateAndCreateOrder()}
-            >
-           Submit
+          >
+            Submit
           </button>
           <div>
-            <Link to="/kitchen"><button className="btn-order" >Orders</button></Link> 
-            
+            <Link to="/kitchen">
+              <button className="btn-order">Orders</button>
+            </Link>
+
             <div className="icon-arrow">
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
@@ -132,9 +156,10 @@ export default function OrderSection({ cartItems, setCartItems }) {
       }
       {
         <div className="container-alert">
-        {showAlert ? <div className="alert-order"> Order create successfully 🎉</div> : null}
+          {showAlert ? (
+            <div className="alert-order"> Order create successfully 🎉</div>
+          ) : null}
         </div>
-        
       }
     </div>
   );

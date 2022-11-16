@@ -4,7 +4,7 @@ import "../../index.css";
 const FoodCategories = ( {setSelected, category}) => {
     return (
         <>
-            <li className= 'categories-food' onClick={()=> {setSelected(category.category_name)}}>{category.icon}</li>
+            <div className= 'categories-food'><li  onClick={()=> {setSelected(category.category_name)}}>{category.icon}</li></div>
         </>
     );
 }

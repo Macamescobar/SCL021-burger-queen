@@ -1,9 +1,10 @@
 import { useState } from "react";
 import menu from "../../data/menu.json";
 import OrderSection from "../OrderSection/OrderSection";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
-
-export default function FoodSection({ selected}) {
+export default function FoodSection({ selected }) {
   //Encontrar según categoría seleccionada
   const option = menu.find((item) => item.category_name === selected);
   //console.log(option);
@@ -19,7 +20,7 @@ export default function FoodSection({ selected}) {
     const ProductExist = cartItems.find((dish) => dish.item === product.item);
     if (ProductExist) {
       setCartItems(
-        cartItems.map((dish) => 
+        cartItems.map((dish) =>
           dish.item === product.item
             ? { ...ProductExist, quantity: ProductExist.quantity + 1 }
             : dish
@@ -28,13 +29,12 @@ export default function FoodSection({ selected}) {
     } else {
       setCartItems([...cartItems, { ...product, quantity: 1 }]);
     }
-  }
+  };
 
   return (
     <>
       <div className="container-food-section">
-      {
-        menuItems.map(({ item, price, description, picture }, index) => (
+        {menuItems.map(({ item, price, description, picture }, index) => (
           <div className="cards-menu" key={index}>
             <img className="food-picture" alt="menu" src={picture} />
             <div className="item-title">
@@ -46,11 +46,20 @@ export default function FoodSection({ selected}) {
             <div className="price-item">
               <p>${price}.00</p>
             </div>
-            <button className="btn-add" onClick={() => handleAddProduct({item, price})}>Add</button>
+            <button
+              className="btn-add"
+              onClick={() => handleAddProduct({ item, price })}
+            >
+              <FontAwesomeIcon icon={faPlus}/>
+            </button>
           </div>
         ))}
       </div>
-      <OrderSection selected={selected} cartItems={cartItems} setCartItems={setCartItems}></OrderSection>
+      <OrderSection
+        selected={selected}
+        cartItems={cartItems}
+        setCartItems={setCartItems}
+      ></OrderSection>
     </>
   );
 }
