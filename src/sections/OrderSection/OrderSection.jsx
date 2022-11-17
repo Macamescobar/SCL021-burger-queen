@@ -147,7 +147,6 @@ export default function OrderSection({ cartItems, setCartItems }) {
             <Link to="/kitchen">
               <button className="btn-order">Orders</button>
             </Link>
-
             <div className="icon-arrow">
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
@@ -157,7 +156,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
       {
         <div className="container-alert">
           {showAlert ? (
-            <div className="alert-order"> Order create successfully 🎉</div>
+            <div className="alert-order"> Order create successfully </div>
           ) : null}
         </div>
       }
