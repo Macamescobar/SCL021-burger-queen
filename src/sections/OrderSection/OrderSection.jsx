@@ -10,6 +10,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
   const [showAlert, setShowAlert] = useState(false);
   const [waitressNotes, setwaitressNotes] = useState("");
 
+
   // Función que guarda el nombre del cliente
   function handleChange(e) {
     setCustomer(e.target.value);
@@ -30,7 +31,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
   const deleteCartItem = (item) => {
     //console.log(item);
     setCartItems(cartItems.filter((productItem) => productItem.item !== item));
-  };
+  }; 
 
   //Calular el total del carrito
   const totalPrice = cartItems.reduce(
@@ -100,7 +101,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
             </button>
           </div>
           <div className="price-order">${price * quantity}</div>
-          <div className="icon-trash">
+          <div className="icon-trash">x
             <FontAwesomeIcon
               icon={faTrash}
               onClick={() => deleteCartItem(item)}
