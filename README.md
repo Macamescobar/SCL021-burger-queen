@@ -15,12 +15,9 @@ Un pequeño restaurante de hamburguesas, que está creciendo, necesita una
 interfaz en la que puedan tomar pedidos usando una tablet, y enviarlos
 a la cocina para que se preparen ordenada y eficientemente.
 
-![burger-queen](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
-
+<!-- ![burger-queen](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg) -->
 
 La interfaz mostrará diferentes categorías, cada una con todos sus productos. El usuario debe poder ir eligiendo qué productos agregar y la interfaz debe ir mostrando el resumen del pedido con el costo total.
-
-![out](https://user-images.githubusercontent.com/110297/45984241-b8b51c00-c025-11e8-8fa4-a390016bee9d.gif)
 
 ### 2. Objetivo principal
 
@@ -67,3 +64,6 @@ Yo como meserx quiero ver los pedidos que están listos para servir a los client
 
 ### 4. Prototipo de alta fidelidad
 
+![Prototipo1](public/img/Prototipo1.png)
+
+![Prototipo2](public/img/Prototipo2.png)
