@@ -28,4 +28,6 @@ describe("prueba sobre el componente OrderSection", () => {
 
 // Probar funcion para eliminar items del carrito de compras
 
+
+
 // sumar el total del carrito de compras

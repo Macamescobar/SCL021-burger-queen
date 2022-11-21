@@ -266,6 +266,7 @@ body {
   justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
+  margin-left: -2rem;
 }
 
 .notes textarea {
@@ -463,4 +464,18 @@ body {
   font-size: 1rem;
   max-width: 10vw;
   word-wrap: break-word;
+}
+
+/* media queries primera vista */
+
+@media screen and (max-width: 1180px) {
+  .icon-arrow {
+    margin-left: 80px;
+    position: relative;
+    top: -0.2rem;
+  }
+
+  .btn-delete-order {
+    margin-left: -2rem;
+  }
 }

@@ -101,7 +101,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
             </button>
           </div>
           <div className="price-order">${price * quantity}</div>
-          <div className="icon-trash">x
+          <div className="icon-trash">
             <FontAwesomeIcon
               icon={faTrash}
               onClick={() => deleteCartItem(item)}
@@ -157,7 +157,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
       {
         <div className="container-alert">
           {showAlert ? (
-            <div className="alert-order"> Order create successfully </div>
+            <div className="alert-order"> Order create successfully🎉 </div>
           ) : null}
         </div>
       }

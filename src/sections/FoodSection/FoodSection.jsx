@@ -16,7 +16,7 @@ export default function FoodSection({ selected }) {
   const [cartItems, setCartItems] = useState([]);
 
   const handleAddProduct = (product) => {
-    //console.log(product);
+    console.log(product);
     const ProductExist = cartItems.find((dish) => dish.item === product.item);
     if (ProductExist) {
       setCartItems(
@@ -48,6 +48,7 @@ export default function FoodSection({ selected }) {
             </div>
             <button
               className="btn-add"
+              data-testid="custom-element"
               onClick={() => handleAddProduct({ item, price })}
             >
               <FontAwesomeIcon icon={faPlus}/>
