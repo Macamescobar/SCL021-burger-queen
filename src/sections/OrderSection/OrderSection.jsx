@@ -10,6 +10,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
   const [showAlert, setShowAlert] = useState(false);
   const [waitressNotes, setwaitressNotes] = useState("");
 
+
   // Función que guarda el nombre del cliente
   function handleChange(e) {
     setCustomer(e.target.value);
@@ -30,7 +31,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
   const deleteCartItem = (item) => {
     //console.log(item);
     setCartItems(cartItems.filter((productItem) => productItem.item !== item));
-  };
+  }; 
 
   //Calular el total del carrito
   const totalPrice = cartItems.reduce(
@@ -147,7 +148,6 @@ export default function OrderSection({ cartItems, setCartItems }) {
             <Link to="/kitchen">
               <button className="btn-order">Orders</button>
             </Link>
-
             <div className="icon-arrow">
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
@@ -157,7 +157,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
       {
         <div className="container-alert">
           {showAlert ? (
-            <div className="alert-order"> Order create successfully 🎉</div>
+            <div className="alert-order"> Order create successfully🎉 </div>
           ) : null}
         </div>
       }
