@@ -6,11 +6,12 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function FoodSection({ selected }) {
   //Encontrar según categoría seleccionada
+  
   const option = menu.find((item) => item.category_name === selected);
-  //console.log(option);
+  console.log(menu);
 
   // Acceder a la categoría y obtener items
-  const menuItems = option.items;
+  const menuItems = option?.items;
   //console.log(menuItems)
 
   const [cartItems, setCartItems] = useState([]);
@@ -34,6 +35,7 @@ export default function FoodSection({ selected }) {
   return (
     <>
       <div className="container-food-section">
+        
         {menuItems.map(({ item, price, description, picture }, index) => (
           <div className="cards-menu" key={index}>
             <img className="food-picture" alt="menu" src={picture} />

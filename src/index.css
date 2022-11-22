@@ -8,6 +8,94 @@ body {
   width: 95vw;
 }
 
+/* Welcome page */
+
+.container-welcome-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+  background-color: #dee8ff;
+  color: #261d56;
+  font-family: "Amaranth";
+  font-size: 30px;
+}
+
+.title-page-welcome {
+  text-shadow: 1px 3px 1px #9e9e9e;
+  text-align: center;
+}
+
+.benito-logo-welcome {
+  width: 9vw;
+  height: 18vh;
+  padding: 1rem;
+}
+
+.info-welcome-page {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-welcome {
+  width: 40vw;
+  height: 100vh;
+  background-color: #261d56;
+}
+
+
+.burger-welcome-img {
+  width: 20vw;
+  height: 50vh;
+  animation: float 3s linear infinite;
+  position:relative;
+  top: 10rem;
+ margin-right: -10rem;
+  -webkit-animation: float 3s linear infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+} 
+
+.btn-order-now {
+  width: 15vw;
+  height: 10vh;
+  font-size: 1rem;
+  font-family: "Amaranth";
+  border-radius: 50px;
+  border: none;
+  background-color: #261d56;
+  cursor: pointer;
+  color: #dee8ff;
+  box-shadow: 1px 3px 1px #9e9e9e;
+  text-align: center;
+}
+
+.btn-order-now:hover {
+  transform: scale(1.1);
+}
+
+
+.benito-logo {
+  width: 7vw;
+  height: 12vh;
+  position: relative;
+  top: -0.5rem;
+  border-radius: 50px;
+  margin-left: 0.8rem;
+}
 /* Styles category-section */
 
 .category-section-container {
@@ -22,7 +110,8 @@ body {
   list-style: none;
   cursor: pointer;
   font-size: 40px;
-  margin-top: 70px;
+  margin-bottom: 50px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +122,7 @@ body {
 }
 
 .styles-ul {
-  padding:0;
+  padding: 0;
   width: 100%;
 }
 
@@ -51,7 +140,6 @@ body {
   background-color: #dee8ff;
   box-shadow: 1px 3px 1px #9e9e9e;
   border-radius: 50px;
-  
 }
 
 .container-home-page {
@@ -186,7 +274,7 @@ body {
   cursor: pointer;
 }
 .icon-trash:hover {
-  color:red;
+  color: red;
 }
 
 .total-price {
@@ -199,7 +287,6 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
 
 .btn-order-customer {
   display: flex;
@@ -240,9 +327,7 @@ body {
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  
 }
-
 
 .container-form-customer input {
   height: 4vh;
@@ -253,7 +338,6 @@ body {
   font-family: "ABeeZee";
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
-  
 }
 
 .notes {
@@ -324,7 +408,7 @@ body {
 /* Estilos del container de órdenes */
 
 .table-orders {
- background-color: #261D56;
+  background-color: #261d56;
   width: 60vw;
   height: 70vh;
   border-radius: 40px;
@@ -350,7 +434,7 @@ body {
   margin-left: -0.3rem;
   font-family: "ABeeZee";
   font-size: 15px;
-  color: #261D56;
+  color: #261d56;
   text-align: center;
 }
 
@@ -363,7 +447,6 @@ body {
   transform: scale(1.5);
 }
 
-
 .select-status {
   width: 8vw;
   height: 4vh;
@@ -371,13 +454,13 @@ body {
   text-align: center;
   cursor: pointer;
   border: none;
-  background-color:#dee8ff;
-  color:#261D56;
+  background-color: #dee8ff;
+  color: #261d56;
   border-radius: 50px;
 }
 
 .btn-eye {
-  border:none;
+  border: none;
   background-color: white;
   font-size: 1.2rem;
   cursor: pointer;
@@ -397,17 +480,17 @@ body {
   margin-top: 1rem;
   justify-content: center;
   font-family: "ABeeZee";
-  color:#261D56;
+  color: #261d56;
 }
 
 .price-order-details {
-  color: #8F8BAB;
+  color: #8f8bab;
 }
 
 .customer-order-details {
   font-family: "Amaranth";
   font-size: 1.1rem;
-  color:#261D56;
+  color: #261d56;
   margin-top: 2rem;
   display: flex;
   justify-content: center;
@@ -415,10 +498,9 @@ body {
   gap: 1rem;
 }
 
-.order-customer{
+.order-customer {
   font-family: "ABeeZee";
 }
-
 
 .btn-back {
   border-radius: 50px;
@@ -442,7 +524,7 @@ body {
   column-gap: 1rem;
   justify-content: center;
   font-family: "Amaranth";
-  color:#261D56;
+  color: #261d56;
 }
 
 .item-description {
@@ -454,7 +536,7 @@ body {
   justify-content: center;
   align-items: baseline;
   font-family: "Amaranth";
-  color:#261D56;
+  color: #261d56;
   font-size: 1.1rem;
   gap: 1rem;
 }
