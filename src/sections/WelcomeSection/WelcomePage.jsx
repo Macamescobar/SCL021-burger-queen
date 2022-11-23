@@ -12,7 +12,7 @@ const WelcomePage = () => {
           className="benito-logo-welcome"
         />
           <h1 className="title-page-welcome"> Benito's Burger </h1>
-          <Link to="/">
+          <Link to="homepage">
             <button className="btn-order-now"> Order now </button>
           </Link>
         </div>

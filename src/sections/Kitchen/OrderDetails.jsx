@@ -34,7 +34,7 @@ export const OrderDetails = ({ order }) => {
           </>
           
         )}
-        <Link to="/">
+        <Link to="/homepage">
           <button className="btn-back"> <FontAwesomeIcon icon={faArrowLeft}/> Back  </button>
         </Link>
       </div>

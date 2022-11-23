@@ -22,7 +22,7 @@ export default function CategorySection() {
             />
           ))}
         </ul>
-        <Link to="/welcome" ><FontAwesomeIcon icon={faHandPointLeft} className="circle-arrow-left"/></Link>
+        <Link to="/" ><FontAwesomeIcon icon={faHandPointLeft} className="circle-arrow-left"/></Link>
       </div>
       <FoodSection selected={selected}></FoodSection>
     </>
