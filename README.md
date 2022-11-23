@@ -1,4 +1,4 @@
-# Burger Queen
+# Benito's Burger
 
 ## Índice
 

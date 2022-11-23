@@ -74,7 +74,7 @@ export default function OrderSection({ cartItems, setCartItems }) {
   };
 
   return (
-    <div className="order-section-container">
+    <div className="order-section-container" data-testid="custom-element">
       {<p className="title-order">Your order summary</p>}
       {/* Mapear cada elemeno dentro del menu */}
       {cartItems.map(({ item, price, quantity }, index) => (
