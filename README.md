@@ -5,7 +5,8 @@
 * [1. Resumen del proyecto](#1-resumen-del-proyecto)
 * [2. Objetivo principal](#2-objetivo-principal)
 * [3. Historias de usuario](#3-historias-de-usuario)
-* [4. Prototipo de alta fidelidad](#5-prototipo-de-alta-fidelidad)
+* [4. Prototipo de alta fidelidad](#4-prototipo-de-alta-fidelidad)
+* [5. Resultado final](#5-resultado-final)
 
 ***
 
