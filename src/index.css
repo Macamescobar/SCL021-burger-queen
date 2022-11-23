@@ -262,18 +262,22 @@ body {
 .btn-remove-food,
 .btn-add-food {
   height: 2.9vh;
+  width: 1.5vw;
   border: none;
   background-color: #dee8ff;
   cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .input-number {
-  height: 2.8vh;
   width: 3vw;
   text-align: center;
   height: 20px;
   border: none;
-  background-color: #dee8ff;
   cursor: pointer;
 }
 
@@ -562,7 +566,7 @@ body {
   word-wrap: break-word;
 }
 
-/* media queries primera vista */
+/* media queries home page */
 
 @media screen and (max-width: 1180px) {
   .icon-arrow {

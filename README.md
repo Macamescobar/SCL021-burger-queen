@@ -2,10 +2,10 @@
 
 ## Índice
 
-* [1. Resumen del proyecto](#2-resumen-del-proyecto)
-* [2. Objetivo principal](#4-consideraciones-generales)
-* [3. Historias de usuario](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [4. Prototipo de alta fidelidad](#5-criterios-de-aceptación-mínimos-del-proyecto)
+* [1. Resumen del proyecto](#1-resumen-del-proyecto)
+* [2. Objetivo principal](#2-objetivo-principal)
+* [3. Historias de usuario](#3-historias-de-usuario)
+* [4. Prototipo de alta fidelidad](#5-prototipo-de-alta-fidelidad)
 
 ***
 
@@ -67,3 +67,11 @@ Yo como meserx quiero ver los pedidos que están listos para servir a los client
 ![Prototipo1](public/img/Prototipo1.png)
 
 ![Prototipo2](public/img/Prototipo2.png)
+
+### 5. Resultado final
+
+![demo1](public/img/demo1.png)
+
+![demo2](public/img/demo2.png)
+
+![demo3](public/img/demo3.png)
