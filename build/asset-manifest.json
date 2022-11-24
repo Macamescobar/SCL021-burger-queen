@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SCL021-burger-queen/static/css/main.755ac89a.css",
+    "main.js": "/SCL021-burger-queen/static/js/main.1e9bd9f2.js",
+    "index.html": "/SCL021-burger-queen/index.html",
+    "main.755ac89a.css.map": "/SCL021-burger-queen/static/css/main.755ac89a.css.map",
+    "main.1e9bd9f2.js.map": "/SCL021-burger-queen/static/js/main.1e9bd9f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.755ac89a.css",
+    "static/js/main.1e9bd9f2.js"
+  ]
+}

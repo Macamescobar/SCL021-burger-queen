@@ -1,5 +1,6 @@
 {
   "name": "burger-queen",
+  "homepage": "https://Macamescobar.github.io/SCL021-burger-queen/homepage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +55,7 @@
     ]
   },
   "devDependencies": {
-    "@types/jest": "^29.2.3"
+    "@types/jest": "^29.2.3",
+    "gh-pages": "^4.0.0"
   }
 }
