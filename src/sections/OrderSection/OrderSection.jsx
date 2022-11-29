@@ -3,6 +3,7 @@ import { faTrash, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { createOrder } from "../../firebase/firestore";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { getTotalPrice } from "../../Utils/OrderSection";
 
 export default function OrderSection({ cartItems, setCartItems }) {
   const [customerName, setCustomer] = useState("");
@@ -34,10 +35,8 @@ export default function OrderSection({ cartItems, setCartItems }) {
   }; 
 
   //Calular el total del carrito
-  const totalPrice = cartItems.reduce(
-    (price, item) => price + item.quantity * item.price,
-    0
-  );
+  const totalPrice = getTotalPrice(cartItems);
+  
 
   // Función para agregar más productos desde la orden
   const handleAdd = (itemName) => {
